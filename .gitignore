@@ -1,0 +1,6 @@
+temp
+module
+*.ini
+*.php
+*.txt
+.env
