@@ -13,8 +13,8 @@ RUN pecl install pdo_sqlsrv
 RUN docker-php-ext-enable sqlsrv pdo_sqlsrv
 
 WORKDIR /var/www/html
-
-RUN git clone --single-branch --branch prod https://update:7urG9SYdpif3z6qqzTMm@gitlab.com/QualitorPHP/qualitor/8.20.git /var/www/html
+ 
+RUN git clone --single-branch --branch prod ${REPOSITORIO} /var/www/html
 
 COPY index.php /var/www/html
 COPY temp /var/www/html
